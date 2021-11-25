@@ -3,10 +3,8 @@
     <div id="navbar">
       <img src="../assets/img/dc-logo.png" alt="logo DC" />
       <ul>
-        <li><a href="#">Ciao</a></li>
-        <li><a href="#">Ciao</a></li>
-        <li><a href="#">Ciao</a></li>
-        <li><a href="#">Ciao</a></li>
+        <li v-for="links, i in navs" :key="i">
+          <a :href="links.url" :class="links.active ? `active` : ``">{{links.text}}</a></li>
       </ul>
     </div>
   </header>
@@ -15,6 +13,62 @@
 <script>
 export default {
   name: "Header",
+  data(){
+    return {
+      navs: [
+        {
+          text: "Characters",
+          url: "#",
+          active: false,
+        },
+        {
+          text: "Comics",
+          url: "#",
+          active: true,
+        },
+        {
+          text: "Movies",
+          url: "#",
+          active: false,
+        },
+        {
+          text: "Tv",
+          url: "#",
+          active: false,
+        },
+        {
+          text: "Games",
+          url: "#",
+          active: false,
+        },
+        {
+          text: "News",
+          url: "#",
+          active: false,
+        },
+        {
+          text: "Collectons",
+          url: "#",
+          active: false,
+        },
+        {
+          text: "Movies",
+          url: "#",
+          active: false,
+        },
+        {
+          text: "Fan",
+          url: "#",
+          active: false,
+        },
+        {
+          text: "Info",
+          url: "#",
+          active: false,
+        }
+      ]
+    }
+  }
 };
 </script>
 
@@ -35,4 +89,13 @@ export default {
     }
   }
 }
+a:hover{
+  background-color: lightblue;
+  padding: 10px;
+}
+.active{
+  background-color: lightblue;
+  padding: 10px;
+}
+
 </style>

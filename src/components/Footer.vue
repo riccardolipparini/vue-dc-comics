@@ -4,25 +4,36 @@
       <div class="sx">
         <div class="space"></div>
         <div class="link-footer">
-          <h1>titolo</h1>
-          <h4><a href="#">cose</a></h4>
+          <h1>DC COMICS</h1>
+          <h4><a href="#">ciao</a></h4>
+          <h4><a href="#">ciao</a></h4>
+          <h4><a href="#">ciao</a></h4>
+          <h4><a href="#">ciao</a></h4>
+          <h4><a href="#">ciao</a></h4>
 
-          <h1>titolo</h1>
+          <h1>SHOP</h1>
           <h4><a href="#">cose</a></h4>
+          <h4><a href="#">ciao</a></h4>
         </div>
 
         <div class="link-footer">
-          <h1>titolo</h1>
-          <h4><a href="#">cose</a></h4>
+          <h1>DC</h1>
+          <h4><a href="#">ciao</a></h4>
+          <h4><a href="#">ciao</a></h4>
+          <h4><a href="#">ciao</a></h4>
+          <h4><a href="#">ciao</a></h4>
         </div>
 
         <div class="link-footer">
-          <h1>titolo</h1>
-          <h4><a href="#">cose</a></h4>
+          <h1>SITES</h1>
+          <h4><a href="#">ciao</a></h4>
+          <h4><a href="#">ciao</a></h4>
+          <h4><a href="#">ciao</a></h4>
+          <h4><a href="#">ciao</a></h4>
         </div>
       </div>
       <div class="dx">
-          <img src="../assets/img/dc-logo-bg.png" alt="">
+        <img src="../assets/img/dc-logo-bg.png" alt="" />
       </div>
     </div>
     <div class="end"></div>
@@ -32,6 +43,33 @@
 <script>
 export default {
   name: "Footer",
+  data(){
+      return {
+          info: [
+              {
+                  url: "#",
+                  text: "ciaoooo"
+              },
+              {
+                  url: "#",
+                  text: "hola"
+              },
+              {
+                  url: "#",
+                  text: "como estas"
+              },
+              {
+                  url: "#",
+                  text: "sas"
+              },
+              {
+                  url: "#",
+                  text: "sahas"
+              },
+              
+          ]
+      }
+  }
 };
 </script>
 
@@ -72,15 +110,15 @@ li {
   width: 50%;
 }
 .space {
-  width: 50%;
+  width: 20%;
 }
 .link-footer {
   text-align: left;
-  margin: 0 10px;
+  margin: 30px 10px;
 
   h1 {
     color: white;
-    font-size: 20px;
+    font-size: 15px;
   }
   h4 {
     color: white;
@@ -88,8 +126,9 @@ li {
   }
 }
 
-.dx,img{
-        height: 50%;
-        width: 50%;
+.dx,
+img {
+  height: 50%;
+  width: 50%;
 }
 </style>
